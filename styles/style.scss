@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap");
+
+$screen_tablet: 700px;
+$screen_mobile: 500px;
+$screen_computer: 700px;
+$maxwidth: 1100px;
+
+$font_color: #212529;
+$hover_color: #3b86f1;
+
+@mixin tablet {
+  @media screen and (max-width: $screen_tablet) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $screen_mobile) {
+    @content;
+  }
+}
+
+@mixin computer {
+  @media screen and (max-width: $screen_computer) {
+    @content;
+  }
+}
+
+body {
+  margin: 0px;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+
+  @include phone {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+  // letter-spacing: 0.1em;
+}
+
+.shadow {
+  box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+  background-color: #3b86f1;
+  border-radius: 100px;
+  padding: 12px 16px 12px 16px;
+  border-width: 0px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+
+  &:hover {
+    background-color: #34a853;
+  }
+}
+
+.header {
+  padding: 30px;
+
+  @include phone() {
+    padding: 20px;
+  }
+  max-width: $maxwidth;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+
+  .navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon_options {
+      display: flex;
+      flex-flow: row wrap;
+      @include tablet() {
+        width: 100vw;
+      }
+
+      .manu_for_phone {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        width: 45px;
+        height: 40px;
+        padding-top: 6px;
+        border-radius: 3px;
+        border-width: 1px;
+        background-color: transparent;
+        border-color: rgba(73, 73, 73, 0.24);
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      .logo {
+        font-size: 12px;
+        img {
+          height: 40px;
+          width: 140px;
+        }
+      }
+
+      @include tablet {
+        .manu_for_phone {
+          display: block;
+        }
+
+        .option {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .more {
+      display: flex;
+      flex-flow: wrap;
+      flex: 1;
+      justify-content: space-between;
+      visibility: visible;
+      height: auto;
+
+      @include tablet() {
+        visibility: hidden;
+        height: 0px;
+        flex-direction: column;
+        //   margin-top: 20px;
+      }
+      .option {
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: 10vw;
+        align-items: center;
+
+        @include tablet() {
+          flex-flow: column wrap;
+          margin: 0px;
+        }
+
+        a {
+          margin: 10px;
+          text-decoration: none;
+          font-weight: 800;
+          color: $font_color;
+
+          &:hover {
+            color: $hover_color;
+          }
+
+          @include phone {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+      @include tablet {
+        //   width: 100vw;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/*********** slide ************/
+
+.slider {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(243, 247, 254, 0.9139005944174545) 25%,
+    rgba(231, 238, 252, 0.9727241238292192) 50%,
+    rgba(243, 246, 253, 0.8942927512801996) 75%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  height: 450px;
+
+  @include phone() {
+    max-height: 350px;
+  }
+}
+.slide {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: $maxwidth;
+  width: 100%;
+
+  @include tablet() {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .sort_dec {
+    max-width: 450px;
+    z-index: 200;
+
+    h2 {
+      font-weight: 800;
+      height: 50px;
+      font-size: 30px;
+
+      @include phone() {
+        font-size: 23px;
+        height: 30px;
+      }
+    }
+
+    p {
+      margin-bottom: 30px;
+
+      @include phone() {
+        font-size: 13px;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .imgs {
+    z-index: 190;
+    position: absolute;
+    right: 50px;
+
+    @include tablet() {
+      visibility: hidden;
+    }
+    img {
+      width: 55vw;
+      max-width: 1100px;
+      height: auto;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+
+/**************** promo **************/

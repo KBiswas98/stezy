@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stezy</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <section class="header">
+      <div class="navbar">
+        <div class="icon_options">
+          <div class="logo">
+            <img src="./assets/icons/logo.png" alt="logo" srcset="" />
+            <br />
+            Do it Yourself Blockchain
+          </div>
+          <button class="manu_for_phone" id="menu">
+            <img
+              src="./assets/icons/used/icons8_menu_50px.png"
+              alt=""
+              srcset=""
+            />
+          </button>
+        </div>
+        <div class="more" id="more">
+          <div class="option">
+            <a href="https://github.com/KBiswas98">About Us</a>
+            <a href="https://github.com/KBiswas98">Product</a>
+            <a href="https://github.com/KBiswas98">Learn</a>
+            <a href="https://github.com/KBiswas98">Blogs</a>
+          </div>
+          <input type="button" value="CONTACT US" class="shadow button" />
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="slide">
+        <div class="sort_dec">
+          <h2>Your Gateway to Blockchain</h2>
+          <p>
+            Empower your business with our user friendly solution for creation
+            use and management of Blockchain.
+          </p>
+          <input type="button" class="button shadow" value="Request demo" />
+        </div>
+        <div class="imgs">
+          <img
+            src="./assets/icons/home-map-ppl.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let show = true;
+      $(document).ready(function() {
+        $("#menu").click(function() {
+          if (show) {
+            $("#more").css({ visibility: "visible", height: "auto" });
+            show = false;
+          } else {
+            show = true;
+            $("#more").css({ visibility: "hidden", height: 0 });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

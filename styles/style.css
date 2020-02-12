@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap");
+body {
+  margin: 0px;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.shadow {
+  -webkit-box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+  background-color: #3b86f1;
+  border-radius: 100px;
+  padding: 12px 16px 12px 16px;
+  border-width: 0px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.button:hover {
+  background-color: #34a853;
+}
+
+.header {
+  padding: 30px;
+  max-width: 1100px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 20px;
+  }
+}
+
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .icon_options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+@media screen and (max-width: 700px) {
+  .header .navbar .icon_options {
+    width: 100vw;
+  }
+}
+
+.header .navbar .icon_options .manu_for_phone {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  width: 45px;
+  height: 40px;
+  padding-top: 6px;
+  border-radius: 3px;
+  border-width: 1px;
+  background-color: transparent;
+  border-color: rgba(73, 73, 73, 0.24);
+}
+
+.header .navbar .icon_options .manu_for_phone img {
+  width: 25px;
+  height: 25px;
+}
+
+.header .navbar .icon_options .logo {
+  font-size: 12px;
+}
+
+.header .navbar .icon_options .logo img {
+  height: 40px;
+  width: 140px;
+}
+
+@media screen and (max-width: 700px) {
+  .header .navbar .icon_options .manu_for_phone {
+    display: block;
+  }
+  .header .navbar .icon_options .option {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.header .navbar .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  visibility: visible;
+  height: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .header .navbar .more {
+    visibility: hidden;
+    height: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.header .navbar .more .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-left: 10vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .header .navbar .more .option {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    margin: 0px;
+  }
+}
+
+.header .navbar .more .option a {
+  margin: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  color: #212529;
+}
+
+.header .navbar .more .option a:hover {
+  color: #3b86f1;
+}
+
+@media screen and (max-width: 500px) {
+  .header .navbar .more .option a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header .navbar .more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/*********** slide ************/
+.slider {
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(25%, rgba(243, 247, 254, 0.913901)), color-stop(50%, rgba(231, 238, 252, 0.972724)), color-stop(75%, rgba(243, 246, 253, 0.894293)), to(white));
+  background: linear-gradient(180deg, white 0%, rgba(243, 247, 254, 0.913901) 25%, rgba(231, 238, 252, 0.972724) 50%, rgba(243, 246, 253, 0.894293) 75%, white 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -10px;
+  height: 450px;
+}
+
+@media screen and (max-width: 500px) {
+  .slider {
+    max-height: 350px;
+  }
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .slide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+.slide .sort_dec {
+  max-width: 450px;
+  z-index: 200;
+}
+
+.slide .sort_dec h2 {
+  font-weight: 800;
+  height: 50px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .slide .sort_dec h2 {
+    font-size: 23px;
+    height: 30px;
+  }
+}
+
+.slide .sort_dec p {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .slide .sort_dec p {
+    font-size: 13px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: 600;
+  }
+}
+
+.slide .imgs {
+  z-index: 190;
+  position: absolute;
+  right: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .slide .imgs {
+    visibility: hidden;
+  }
+}
+
+.slide .imgs img {
+  width: 55vw;
+  max-width: 1100px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+/**************** promo **************/
+/*# sourceMappingURL=style.css.map */
