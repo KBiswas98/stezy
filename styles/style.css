@@ -19,6 +19,16 @@ body {
           box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.shadow_1 {
+  -webkit-box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082), 0 10px 100px 0 rgba(0, 0, 0, 0.295);
+          box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082), 0 10px 100px 0 rgba(0, 0, 0, 0.295);
+}
+
+.shadow1 {
+  -webkit-box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082), 0 10px 70px 0 rgba(0, 0, 0, 0.651);
+          box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082), 0 10px 70px 0 rgba(0, 0, 0, 0.651);
+}
+
 .button {
   background-color: #3b86f1;
   border-radius: 100px;
@@ -304,4 +314,434 @@ body {
 }
 
 /**************** promo **************/
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background: white;
+  position: relative;
+  border-radius: 4px;
+}
+
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid white;
+  border-radius: 30px;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid white;
+}
+
+.promo {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 1100px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.promo .option {
+  margin-bottom: 40px;
+}
+
+.promo .option div {
+  position: relative;
+  -webkit-transform: translate(-80%);
+          transform: translate(-80%);
+  left: 50%;
+}
+
+.promo .option div img {
+  position: absolute;
+  z-index: 3000;
+  left: 25px;
+  top: 3px;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.promo .option div img:hover {
+  -webkit-transform: scale(1.18);
+  transform: scale(1.18);
+}
+
+.promo .option div:hover {
+  -webkit-box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082), 0 10px 90px 0 rgba(0, 0, 0, 0.486);
+          box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082), 0 10px 90px 0 rgba(0, 0, 0, 0.486);
+}
+
+.promo .option p {
+  margin-top: 40px;
+  font-size: 18px;
+  max-width: 210px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 500px) {
+  .promo .option p {
+    font-size: 17px;
+    margin-bottom: 40px;
+  }
+}
+
+/************** feture ****************/
+.feture {
+  max-width: 1100px;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+@media screen and (max-width: 500px) {
+  .feture {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+.feture .heading {
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .feture .heading {
+    font-size: 20px;
+    padding: 0px 20px 0px 20px;
+  }
+}
+
+.feture .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feture .options .option {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.281);
+  margin: 12px;
+  border-radius: 15px;
+  max-width: 30%;
+  min-width: 220px;
+  width: 100%;
+  height: 270px;
+  -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.082), 0 3px 10px 0 rgba(81, 134, 240, 0.331268);
+          box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.082), 0 3px 10px 0 rgba(81, 134, 240, 0.331268);
+}
+
+@media screen and (max-width: 500px) {
+  .feture .options .option {
+    max-width: 100%;
+  }
+}
+
+.feture .options .option img {
+  width: 100px;
+}
+
+.feture .options .option .card_heading {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 10px 0px 20px 0px;
+}
+
+.feture .options .option .description {
+  padding: 0px 20px 0px 20px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/********** sort *****************/
+.sort_des {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+.sort_des h2 {
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.sort_des p {
+  font-size: 13px;
+  max-width: 600px;
+  text-align: center;
+}
+
+/************* Carousel **************/
+.carousel {
+  width: 100%;
+  position: relative;
+}
+
+.carousel .card {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.carousel #pre {
+  position: absolute;
+  top: 40%;
+}
+
+.carousel #nex {
+  position: absolute;
+  top: 40%;
+  right: 5px;
+}
+
+.carousel #main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-x: auto;
+}
+
+.carousel #main .slide .card {
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+}
+
+/********* contacts *************/
+.contact {
+  margin-top: 50px;
+  height: 300px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  background: white;
+  background: radial-gradient(circle, white 0%, rgba(81, 134, 240, 0.151996) 0%, white 59%);
+}
+
+.contact h2 {
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.contact p {
+  font-size: 13px;
+  max-width: 730px;
+  text-align: center;
+}
+
+.contact button {
+  margin-top: 20px;
+}
+
+/********** update **************/
+.update {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.update h2 {
+  text-align: center;
+}
+
+.update .email {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.update .email img {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  margin-left: -126px;
+}
+
+.update .email input {
+  width: 100%;
+  height: 35px;
+  border-radius: 100px;
+  border-color: black;
+  border-width: 0.5px;
+}
+
+.update .email button {
+  margin-left: -50px;
+}
+
+/********** footer ************/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #f3f6fd;
+  padding: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    font-size: 13px;
+  }
+}
+
+.footer div ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.footer div ul li {
+  margin-top: 10px;
+}
+
+.footer div ul li img {
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 100px;
+  margin: 5px;
+}
+
+.footer div ul li:first-child {
+  font-size: 18px;
+  font-weight: 800;
+  margin-left: -5px;
+}
+
+.footer div p {
+  max-width: 200px;
+}
 /*# sourceMappingURL=style.css.map */
