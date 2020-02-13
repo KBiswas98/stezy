@@ -561,43 +561,39 @@ body {
 }
 
 /************* Carousel **************/
-.carousel {
-  width: 100%;
-  position: relative;
+.conatainer {
+  left: 50%;
+  margin-top: 50px;
 }
 
-.carousel .card {
-  height: 100%;
-  border-radius: 10px;
-  background-color: #fff;
-}
-
-.carousel #pre {
-  position: absolute;
-  top: 40%;
-}
-
-.carousel #nex {
-  position: absolute;
-  top: 40%;
-  right: 5px;
-}
-
-.carousel #main {
+.conatainer .holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  overflow-x: auto;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  overflow-y: auto;
+  max-width: 1100px;
 }
 
-.carousel #main .slide .card {
-  margin: 20px;
-  height: 300px;
-  width: 400px;
+.conatainer .holder .card {
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 450px;
+  max-height: 400px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.conatainer .holder .card div {
+  text-align: start;
+  margin-top: 10px;
 }
 
 /********* contacts *************/

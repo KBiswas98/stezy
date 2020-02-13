@@ -399,7 +399,7 @@ body {
       height: 270px;
 
       box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.082),
-      0 3px 10px 0 rgba(81,134,240,0.33126754119616597);
+        0 3px 10px 0 rgba(81, 134, 240, 0.33126754119616597);
 
       @include phone {
         max-width: 100%;
@@ -448,41 +448,37 @@ body {
   }
 }
 
-/************* Carousel **************/
+/************* Carousel **************/  
+.conatainer {
+    // position: relative;
+    left: 50%;
+    margin-top: 50px;
 
-.carousel {
-  width: 100%;
-  position: relative;
+    .holder {
+        display: flex;
+        flex-flow: row wrap;
+        // overflow: hidden;
+        overflow-y: auto;
+        max-width: $maxwidth;
+        .card {
+            position: relative;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            height: 450px;
+            max-height: 400px;;
+            background-color: #fff;
+            border-radius: 5px;
+            // border: 1px solid black;
+            box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-  .card {
-    height: 100%;
-    border-radius: 10px;
-    background-color: #fff;
-  }
-
-  #pre {
-    position: absolute;
-    top: 40%;
-  }
-
-  #nex {
-    position: absolute;
-    top: 40%;
-    right: 5px;
-  }
-
-  #main {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    .slide {
-      .card {
-        margin: 20px;
-        height: 300px;
-        width: 400px;
-      }
+            div {
+                text-align: start;
+                margin-top: 10px;
+            }
+        }
     }
-  }
 }
 
 /********* contacts *************/
@@ -572,7 +568,7 @@ body {
   padding: 30px;
 
   @include phone {
-      font-size: 13px;
+    font-size: 13px;
   }
   div {
     ul {
@@ -585,7 +581,7 @@ body {
           height: 15px;
           width: 15px;
           border: 1px solid black;
-          padding:5px;
+          padding: 5px;
           border-radius: 100px;
           margin: 5px;
         }
