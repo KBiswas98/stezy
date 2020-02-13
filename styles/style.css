@@ -581,7 +581,7 @@ body {
 .conatainer .holder .card {
   position: relative;
   padding: 10px;
-  margin: 10px;
+  margin: 20px;
   width: 300px;
   height: 450px;
   max-height: 400px;
@@ -591,9 +591,19 @@ body {
           box-shadow: 0 0px 30px 0 rgba(124, 124, 124, 0.082), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.conatainer .holder .card h2 {
+  margin-bottom: 40px;
+}
+
 .conatainer .holder .card div {
+  font-size: 14px;
   text-align: start;
   margin-top: 10px;
+}
+
+.conatainer .holder .card div img {
+  height: 12px;
+  width: 12px;
 }
 
 /********* contacts *************/
